@@ -583,7 +583,7 @@ main{
 /* ----------------------------REGISTRO----------- */
 
 .caja--registro{
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -602,6 +602,9 @@ main{
 }
 
 .caja--registro form{
+
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -694,13 +697,14 @@ header {
     justify-content: center;
     padding-top: 5%;
     color: whitesmoke;
+    
 }
 
 .seccion-importante img{
     border-radius: 10%;
     margin-left: auto;
     margin-right: auto;
-    
+   
 }
 
 
@@ -722,14 +726,17 @@ aside img{
     margin-right: auto;
 }
 
+
+
 aside p{
     font-weight: 900;
-    color: white;
+    color:#636816
 }
 
 .seccion-experiencia{
     grid-area: experiencia;
     text-align: center; 
+    margin-top: 50px;
 }
 
 .seccion-experiencia img{
