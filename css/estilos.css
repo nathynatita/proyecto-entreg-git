@@ -190,28 +190,20 @@ header nav ul li a:hover{
     box-shadow: 1px 1px 1px grey;
 }
 
-
 video{
 
     width:100%;
     
-
 }
 
 
 /* ----------SECCIONES--------- */
 
-.contenedor-secciones1{
-    display: grid;   
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    gap: 0px 50px;
-    padding: 2%;
-    text-align: justify;
-    flex-wrap: wrap;
+/* .contenedor-secciones1{
+   
+    saque las grids y no puedo colocar una seccion al lado de otra con bootstrap como hacia con las grillas
     
-}
-
+} */
 
 
 h2{
@@ -219,15 +211,12 @@ h2{
     width: 100%;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px #636816;
    
-    
-    
 }
 
 h3{
     display: flex;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
    
-
 }
 
 h3 p{
@@ -237,7 +226,6 @@ h3 p{
 
 
 .nosotros{ 
-    display: inline-block;
     text-align: justify;
     color: #795630;
     grid-column: 1/1;
@@ -253,8 +241,6 @@ h3 p{
 }
 
 .menu{
-    
-    display: inline-block;
     text-align: justify;
     color: #795630;
     grid-column: 2/1;
@@ -268,7 +254,6 @@ h3 p{
     margin-top: 5%;
 }
 .community{
-    display: inline-block;
     text-align: justify;
     color: #795630;
     grid-column: 2/3;
