@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +14,18 @@
 
     <title>N A L A - Loging</title>
 </head>
-<header>
-    <img class="logo" width="300" height="300" src="../logo/logo-nala.png" alt="logo-nala-beachbar">
+<body class="container">
 
+<header>
+    <div class="container">
+        <img class="logo" width="300" height="300" src="../logo/logo-nala.png" alt="logo-nala-beachbar" class="img-fluid">
+      </div>
     <br><br>
 </header>
 
 <br>
 <br>
-<body>
+
     <main>
 
     <h2 class="titulo-loging"> ¡Que bueno verte de nuevo!</h2>
@@ -30,10 +34,10 @@
     <p> Te estabamos esperando. Ingresá y enterate de nuestras noveades</p>
     <hr>
     <div class="caja--registro">
-  
+
     <div class="ingresar-form">
         <form>
-            
+
             <label for="campo-email"></label>
             <input type="email" id="campo-email" placeholder="Mail" aria-required="true" >
 
@@ -46,33 +50,43 @@
 
     </div>
 </main>
-            
-</body>
 
+<<<<<<< HEAD
 <footer>
+=======
+
+
+
+
+<footer class="row footer justify-content-center">
+>>>>>>> bootstrap
     <ul>
-        <li><a href="../pages/contacto.html">Contactenos</a> </li>
-        <li><a href="../pages/reservas.html">Reservas</a></li>
+        <li><a href="./contacto.html">Contactenos</a> </li>
+        <li><a href="./reservas.html">Reservas</a></li>
         <li><a href="../index.html">Home</a></li>
     </ul>
 
-    <div class="imagenesfooter">
+    <div class="row imagenesfooter justify-content-space-between">
 
-       <a href="https://www.instagram.com/">
-       <img width="30" height="30"src="../icon/instagram.png" alt="instagram-logo"></a> 
-        
-       <a href="https://www.twitter.com/">
-       <img width="30" height="30" src="../icon/twitter.png" alt="twitter-logo"></a> 
-        
-       <a href="https://www.facebook.com/">
-       <img width="30" height="30" src="../icon/facebook.png" alt="facebook-logo"></a> 
 
-       <a href="https://www.facebook.com/">
-       <img width="30" height="30" src="../icon/youtube.png" alt="youtube-logo"></a> 
+       <a class="col-8 col-sm-3" href="https://www.instagram.com/">
+       <img class="instagram" width="30" height="30"src="../icon/instagram.png" alt="instagram-logo"></a>
+
+       <a class="col-8 col-sm-3" href="https://www.twitter.com/">
+       <img class="twitter" width="30" height="30" src="../icon/twitter.png" alt="twitter-logo"></a>
+
+       <a class="col-8 col-sm-3" href="https://www.facebook.com/">
+       <img class=facebook width="30" height="30" src="../icon/facebook.png" alt="facebook-logo"></a>
+
+       <a class="col-8 col-sm-3" href="https://www.facebook.com/">
+       <img class="youtube" width="30" height="30" src="../icon/youtube.png" alt="youtube-logo"></a>
 
     </div>
-    
+
     <p>© nathynatita, Inc. 2022</p>
 
 </footer>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
 </html>
