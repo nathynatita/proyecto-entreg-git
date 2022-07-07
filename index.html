@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500&family=Lexend+Zetta:wght@100;200;300;500;700&display=swap" rel="stylesheet">
@@ -19,38 +20,88 @@
     </head>
 
 
-    <body>
+   
       
-        
+    <body class="container-fluid">  
 
 
-        <header>
-            <img class="logo" width="300" height="300" src="../logo/logo-nala.png" alt="logo-nala-beachbar">
-            
+     <header>
+            <div class="container">
+            <img class="logo" width="300" height="300" src="../logo/logo-nala.png" alt="logo-nala-beachbar" class="img-fluid">
+          </div>
 <!-- BARRA DE NAVEGACION -->
-            <nav>
+            <!-- <nav class="navbar">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
 
                 <ul> 
                     
-                 <li><a href="./index.html">Inicio</a> </li>
-                 <li><a href="../menu/carta_menu.pdf" target="_blank"> Menú</a> </li>
-                 <li><a href="../pages/community.html">Community</a> </li>
-                 <li><a href="../pages/reservas.html">Reservas</a> </li>
-                 <li><a href="../pages/contacto.html">Contactenos</a> </li>
+                 <li><a class= "col col-lg-12" href="./index.html">Inicio</a> </li>
+
+                 <li><a class= "col col-lg-12" href="../pages/community.html">Community</a> </li>
+
+                 <li><a class= "col col-lg-12" href="../pages/reservas.html">Reservas</a> </li>
+                 
+                 <li><a class= "col col-lg-12" href="../pages/contacto.html">Contactenos</a> </li>
                 
                 
                 </ul>
                 
 
-            </nav>  
+            </nav>   -->
 
+        
+
+        <nav class="navbar navbar-expand-md">
+                <div class="rowcontainer-fluid" >
+                  <a class="navbar-brand" href="#"></a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/community.html">Community</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/reservas.html">Reservas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contactanos</a>
+                      </li>
+        
+                    </ul>
+
+                    <br>
+                  </div>
+
+                </div>
+              </nav>
+             <br>
+              <a class="btn btn-light " href="../pages/loging.html">Log in</a>
             <br>
+            
+              <a class="btn btn-outline-success" href="../pages/registro.html"> Registro</a>
+            
             <br>
+
 
         
 <!-- BOTONERA BARRA DE NAVEGACION -->
 
-        <div class="barra-inicio">
+
+
+
+
+        <!-- <div class="barra-inicio">
 
             <input type="text" placeholder="Búsqueda" id="barra-de-busqueda"> 
             <label for="barra-de-busqueda"></label>
@@ -58,31 +109,47 @@
             <a href="../pages/loging.html"><button class="boton" > Log in</button></a>
 
             <a href="../pages/registro.html"><button class="boton--registro"> Registro </button></a>
-        </div>
+        </div> -->
+<div class="container">
+        <form class="d-flex text-center" role="search">
+          <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
 
-        </header>
-<br>
-<br>
-</main>  
-
-      
-<!---------------------- VIDEO MAR -->
         
+  
+          <button class="btn btn-outline-success col col-sm-3" type="submit"> Buscar</button>
+        </form>
+
+        <br>
+        </header>
+
+</div>
+<br>
+<br>
+
+
+
+
+<!---------------------- VIDEO MAR -->
+        <div class=""ratio ratio-16x9">
             <video  width="1240" height="1020" controls> <source src="../video/mar2.mp4" type="video/mp4" alt="video del mar"> 
 
             Tu navegador no es compatible con HTML5
             </video>
+
+          </div>
+          
+          
             <hr>
 <br>
             <h1> Mediterranean food & drinks</h1>
-        </body>
+    
 <br>
 <br>
 <!-- -----------------SECCIONES------------ -->
 
-    <div class="contenedor-secciones1">
+    <div class="row contenedor-secciones1"> 
 
-                <strong> <section class="nosotros">Nosotros
+                <section class="col col-lg-12 col-xl-6 nosotros"> <strong> Nosotros
                 </strong>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam veritatis ratione nobis et? Consectetur voluptatibus sunt ea, ipsam magnam facilis eum quos laboriosam amet tenetur sequi? Expedita, autem nostrum.</p>
@@ -92,17 +159,17 @@
              </section> 
 
 
-                <strong> <section class="menu">Menú </strong>
+                <section class="col-xl-6 menu"> <strong> Menú </strong>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam veritatis ratione nobis et? Consectetur voluptatibus sunt ea, ipsam magnam facilis eum quos laboriosam amet tenetur sequi? Expedita, autem nostrum.</p>
 
-                <a href="../menu/carta_menu.pdf" target="_blank"> <input type="button" value="Conoce más"></a>
+                <a href="../menu/carta_menu.pdf" target="_blank"> <input type="button" value="Menú en .pdf"></a>
 
     
              </section>
             
-
+    
         
-             <strong> <section class="community">Community </strong>
+             <section class="col-xl-6 community"><strong> Community </strong>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam veritatis ratione nobis et? Consectetur voluptatibus sunt ea, ipsam magnam facilis eum quos laboriosam amet tenetur sequi? Expedita, autem nostrum.</p>
 
@@ -111,7 +178,7 @@
                 </section>
 
      
-             <strong><section class="reservas">Reservas   </strong>
+             <section class="col-xl-6 reservas"><strong> Reservas   </strong>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam veritatis ratione nobis et? Consectetur voluptatibus sunt ea, ipsam magnam facilis eum quos laboriosam amet tenetur sequi? Expedita, autem nostrum.</p>
 
                 <a href="../pages/reservas.html"><input type="button" value="Conoce más"></a>
@@ -125,22 +192,26 @@
 
 
     <h2>Nosotros</h2>
-    <section class="seccion-nosotros">
+    <section class="container">
+      
 
-        <img width="300" height="320" src="../fotos/photo-lau.jpeg" alt="foto de creadora Natalia" class="centrar-imagen"> 
+        <img width="200px" height="120pxpx" src="../fotos/photo-lau.jpeg" alt="foto de creadora Natalia" class="rounded img-fluid"> 
     <br>
     <br> 
-        <h3> Natalia</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ab ducimus ipsa accusamus atque aliquid, asperiores voluptatem nesciunt praesentium ipsam! Cupiditate veritatis id amet aliquid a doloribus animi earum quaerore Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ullam nostrum consequuntur officia, expedita quas ex maxime commodi delectus soluta quae cum distinctio saepe ipsum? Rem perspiciatis voluptatum amet voluptatibus.</p>
-
-    <br>
+    <div class="row justify-content-center text-center">
         
-        <img  width="300" height="300" src="../fotos/photo-nat.jpeg" alt="foto de creadora Laura" class="centrar-imagen"> 
+        <p> <b> Natalia:</b>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ab ducimus ipsa accusamus atque aliquid, asperiores voluptatem nesciunt praesentium ipsam! Cupiditate veritatis id amet aliquid a doloribus animi earum quaerore Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ullam nostrum consequuntur officia, expedita quas ex maxime commodi delectus soluta quae cum distinctio saepe ipsum? Rem perspiciatis voluptatum amet voluptatibus.</p>
+      </div>
+    <br>
+    
+      <img width="200px" height="120pxpx" src="../fotos/photo-nat.jpeg" alt="foto de creadora Laura" class="rounded img-fluid"> 
+       
     <br>
     <br>
-         <h3>  Laura </h3>
+         
 
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci animi minima molestiae suscipit accusamus similique reiciendis numquam deserunt tempora consectetur non dolore, necessitatibus dignissimos, eos natus. Maxime obcaecati aliquid modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure quas expedita provident odio. Recusandae illo veritatis omnis, officiis rerum iusto nulla, tempore distinctio, voluptate odio error eum! Tenetur, eligendi!</p>
+         <p> <b>Laura:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci animi minima molestiae suscipit accusamus similique reiciendis numquam deserunt tempora consectetur non dolore, necessitatibus dignissimos, eos natus. Maxime obcaecati aliquid modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure quas expedita provident odio. Recusandae illo veritatis omnis, officiis rerum iusto nulla, tempore distinctio, voluptate odio error eum! Tenetur, eligendi!</p>
        
     
     </section>
@@ -153,37 +224,40 @@
 <br>
 <br>
         
-        <a href="../pages/loging.html"><button class="boton--under" > Log in</button></a>
+      <a class="btn btn-light" href="../pages/loging.html">Log in</a>
+      
+    
 
-        <a href="../pages/registro.html"><button class="boton__registro--under"> Registro </button></a>
+       <a class="btn btn-outline-success " href="../pages/registro.html"> Registro</a>
         
 
     </section>
 
 
-
+</main>
 
 <!------------------ FOOTER -->
 
-<footer>
+<footer class="row footer justify-content-center">
     <ul>
         <li><a href="../pages/contacto.html">Contactenos</a> </li>
         <li><a href="../pages/reservas.html">Reservas</a></li>
         <li><a href="./index.html">Home</a></li>
     </ul>
 
-    <div class="imagenesfooter">
+    <div class="row imagenesfooter justify-content-space-between">
+       
 
-       <a href="https://www.instagram.com/">
+       <a class="col-8 col-sm-3" href="https://www.instagram.com/">
        <img class="instagram" width="30" height="30"src="../icon/instagram.png" alt="instagram-logo"></a> 
-        
-       <a href="https://www.twitter.com/">
+
+       <a class="col-8 col-sm-3" href="https://www.twitter.com/">
        <img class="twitter" width="30" height="30" src="../icon/twitter.png" alt="twitter-logo"></a> 
         
-       <a href="https://www.facebook.com/">
+       <a class="col-8 col-sm-3" href="https://www.facebook.com/">
        <img class=facebook width="30" height="30" src="../icon/facebook.png" alt="facebook-logo"></a> 
 
-       <a href="https://www.facebook.com/">
+       <a class="col-8 col-sm-3" href="https://www.facebook.com/">
        <img class="youtube" width="30" height="30" src="../icon/youtube.png" alt="youtube-logo"></a> 
 
     </div>
@@ -191,7 +265,11 @@
     <p>© nathynatita, Inc. 2022</p>
 
 </footer>
+ 
 
+
+   <script src="./js/bootstrap.js"></script>
+</body>
 
 </html>
 
